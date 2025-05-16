@@ -29,6 +29,6 @@ jobs:
             rm -rf ${{ secrets.TARGET_DIR }}
             mkdir -p ${{ secrets.TARGET_DIR }}
             cd ${{ secrets.TARGET_DIR }}
-            git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git .
+            git clone https://github.com/MrSohailAhmad/new_express_app.git.
             npm install
             pm2 restart app || pm2 start index.js --name "app"
