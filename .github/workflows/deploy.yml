@@ -17,6 +17,3 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.0
