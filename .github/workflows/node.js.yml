@@ -28,7 +28,7 @@ jobs:
 
       # ✅ Deploy only for Node.js 18.x
       - name: Deploy to EC2
-        if: matrix.node-version == '18.x' && github.ref == 'refs/heads/master'
+        if: matrix.node-version == '20.x' && github.ref == 'refs/heads/master'
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.EC2_HOST }}
